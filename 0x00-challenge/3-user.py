@@ -38,7 +38,7 @@ class User():
         - Hash `pwd` in MD5 before assign to `__password`
         """
         if pwd is None or type(pwd) is not str:
-            self__password = None
+            self.__password = None
         else:
             self.__password = hashlib.md5(pwd.encode()).hexdigest().lower()
 
